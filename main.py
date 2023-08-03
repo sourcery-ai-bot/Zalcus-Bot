@@ -49,11 +49,13 @@ async def on_ready():
 async def on_message(message):
     if message.author == bot.user:
         return
-    if message.author.bot: return
-    else:
-        if str(message.author.id) in shit:
-            await message.delete()
-            await message.channel.send(message.author.mention + "<:troll:988139019869241444>")
+    if message.author.bot:
+        if message.author.bot: return
+    if str(message.author.id) in shit:
+        await message.delete()
+        await message.channel.send(
+            f"{message.author.mention}<:troll:988139019869241444>"
+        )
 
 @bot.command(
     name="hello",
@@ -227,124 +229,144 @@ async def summon(ctx: interactions.CommandContext):
     description='print("Hello World!")'
 )
 async def console(ctx: interactions.CommandContext):
-   message = await ctx.send("H")
-   await message.edit(content=f"He")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hel")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hell")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hello")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hello W")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hello Wo")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hello Wor")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hello Worl")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hello World")
-   await message.edit(content=f"Hello World!")
-   await asyncio.sleep(1)
-   await message.edit(content=f"Hello World")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hello Worl")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hello Wor")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hello Wo")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hello W")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hello ")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"Hell")
-   await asyncio.sleep(1.7)
-   await message.edit(content="Hel")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"He")
-   await asyncio.sleep(0.7)
-   await message.edit(content=f"H")
-   await asyncio.sleep(0.7)
-   await message.edit(content=f"⠀")
+    message = await ctx.send("H")
+    await message.edit(content="He")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hel")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hell")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello W")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello Wo")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello Wor")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello Worl")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello World")
+    await message.edit(content="Hello World!")
+    await asyncio.sleep(1)
+    await message.edit(content="Hello World")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello Worl")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello Wor")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello Wo")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello W")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hello ")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hell")
+    await asyncio.sleep(1.7)
+    await message.edit(content="Hel")
+    await asyncio.sleep(1.7)
+    await message.edit(content="He")
+    await asyncio.sleep(0.7)
+    await message.edit(content="H")
+    await asyncio.sleep(0.7)
+    await message.edit(content="⠀")
 
 @bot.command(
     name="cat",
     description="c a t"
 )
 async def cat(ctx: interactions.CommandContext):
-   message = await ctx.send("A package has Arrived!")
-   await message.edit(content=f"""
+    message = await ctx.send("A package has Arrived!")
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""Hi...
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""Hi...
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""Hi...
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""Hi...
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""Hi...
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""Hi...
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")		
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""Hi...
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""Hi...
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")		
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""Hi...
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""Hi...
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")		
-   await asyncio.sleep(2.0)
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
 	
 
 @bot.command(
@@ -360,24 +382,24 @@ async def cat(ctx: interactions.CommandContext):
     ],
 )
 async def nuke(ctx: interactions.CommandContext, user: discord.Member):
-   message = await ctx.send(f" {ctx.author.mention} has put a nuke in {user.mention}'s House, it will go off in **5**")
-   await asyncio.sleep(3.5)
-   await message.edit(content=f"**4**")
-   await asyncio.sleep(1.5)
-   await message.edit(content="**3**")
-   await asyncio.sleep(1.5)
-   await message.edit(content=f"**2**")
-   await asyncio.sleep(1.5)
-   await message.edit(content="**1**")
-   await asyncio.sleep(1.5)
-   await message.edit(content="https://tenor.com/view/explosion-mushroom-cloud-atomic-bomb-bomb-boom-gif-4464831")
-   await asyncio.sleep(1.7)
-   await message.edit(content="**BOOM**")
-   await asyncio.sleep(3)
-   await message.edit(content=f"Rest in pieces {user.mention}")
-   await asyncio.sleep(3)
-   await message.edit(content=f"they will be missed")
-   await asyncio.sleep(3)  
+    message = await ctx.send(f" {ctx.author.mention} has put a nuke in {user.mention}'s House, it will go off in **5**")
+    await asyncio.sleep(3.5)
+    await message.edit(content="**4**")
+    await asyncio.sleep(1.5)
+    await message.edit(content="**3**")
+    await asyncio.sleep(1.5)
+    await message.edit(content="**2**")
+    await asyncio.sleep(1.5)
+    await message.edit(content="**1**")
+    await asyncio.sleep(1.5)
+    await message.edit(content="https://tenor.com/view/explosion-mushroom-cloud-atomic-bomb-bomb-boom-gif-4464831")
+    await asyncio.sleep(1.7)
+    await message.edit(content="**BOOM**")
+    await asyncio.sleep(3)
+    await message.edit(content=f"Rest in pieces {user.mention}")
+    await asyncio.sleep(3)
+    await message.edit(content="they will be missed")
+    await asyncio.sleep(3)  
 
 @bot.command(
     name="iq",
@@ -469,77 +491,87 @@ async def bitchesrate(ctx: interactions.CommandContext, user: discord.Member):
     ],
 )
 async def customcat(ctx: interactions.CommandContext, text: str):
-   message = await ctx.send("A package has Arrived!")
-   await message.edit(content=f"""
+    message = await ctx.send("A package has Arrived!")
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""{text}
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(content=f"""{text}
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
     　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""{text}
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(content=f"""{text}
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
     　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""{text}
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(content=f"""{text}
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")		
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    　￣￣￣￣""")
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""{text}
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(content=f"""{text}
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")		
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""
+    　￣￣￣￣""")
+    await asyncio.sleep(2.0)
+    await message.edit(
+        content="""
 ຸ 　　　＿＿_＿＿
     　／　／　  ／|"
     　|￣￣￣￣|　|
     　|　　　　|／
-    　￣￣￣￣""")
-   await asyncio.sleep(2.0)
-   await message.edit(content=f"""{text}
+    　￣￣￣￣"""
+    )
+    await asyncio.sleep(2.0)
+    await message.edit(content=f"""{text}
     　   　∧＿∧＿_
     　／(´･ω･`)  ／＼
     ／|￣￣￣￣|＼／
     　|　　　　|／
-    　￣￣￣￣""")		
-   await asyncio.sleep(2.0)
+    　￣￣￣￣""")
+    await asyncio.sleep(2.0)
 
 @bot.command(
     name="furryrate",
@@ -585,26 +617,26 @@ async def kill(ctx, user: discord.Member):
     ],
 )
 async def flashingconsole(ctx: interactions.CommandContext, text: str):
-   message = await ctx.send(f"{text}")
-   await message.edit(content=f"⠀⠀⠀")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"{text}")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"⠀⠀⠀")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"{text}")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"⠀⠀⠀")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"{text}")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"⠀⠀⠀")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"{text}")
-   await asyncio.sleep(1.7)
-   await message.edit(content=f"⠀⠀⠀")
-   await message.edit(content=f"{text}")
-   await asyncio.sleep(1.7)  
+    message = await ctx.send(f"{text}")
+    await message.edit(content="⠀⠀⠀")
+    await asyncio.sleep(1.7)
+    await message.edit(content=f"{text}")
+    await asyncio.sleep(1.7)
+    await message.edit(content="⠀⠀⠀")
+    await asyncio.sleep(1.7)
+    await message.edit(content=f"{text}")
+    await asyncio.sleep(1.7)
+    await message.edit(content="⠀⠀⠀")
+    await asyncio.sleep(1.7)
+    await message.edit(content=f"{text}")
+    await asyncio.sleep(1.7)
+    await message.edit(content="⠀⠀⠀")
+    await asyncio.sleep(1.7)
+    await message.edit(content=f"{text}")
+    await asyncio.sleep(1.7)
+    await message.edit(content="⠀⠀⠀")
+    await message.edit(content=f"{text}")
+    await asyncio.sleep(1.7)  
 
 @bot.command(
     name="echo",
